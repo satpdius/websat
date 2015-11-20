@@ -1,0 +1,199 @@
+/* $Id: nodes.css,v 1.4 2010/06/24 23:08:18 jmburnz Exp $ */
+
+/**********************************************************
+ *                      Nodes
+ **********************************************************/
+
+.node {
+  margin: 0 0 1.5em;
+}
+
+/* Inner DIV */
+.node-inner {}
+
+/* Title */
+.node-title {}
+.node-title a {
+  text-decoration: none;
+}
+
+.node-title a:hover,
+.node-title a:focus {
+  text-decoration: underline;
+}
+
+/* User picture */
+.node .user-picture {
+  float: right;
+  margin: 0.3em 0 0.5em 1em;
+}
+
+/* Submitted */
+.node-submitted {}
+.node-submitted span {}
+.node-submitted a    {}
+
+/* Node content wrapper */
+.node-content {}
+
+/* Links */
+.node-links {
+	margin-top: 20px;
+}
+.node-links ul.links {
+	margin-left: 0px;
+}
+.node-links ul.links li {}
+.node-links ul.links li a:link, 
+.node-links ul.links li a:visited
+{
+	color: #429d34;
+	font-weight: bold;
+}
+
+/* Page view */
+.node-view {}
+
+/* Teaser view */
+.node-teaser {}
+
+.full-view-node-teaser {
+	clear: both;
+	font-weight: bold;
+}
+
+/* Sticky */
+.node-sticky {}
+
+/* Promoted */
+.node-promoted {}
+
+/* Status */
+.node-unpublished {}
+ 
+/* Theme nodes that belong to the author */
+.node-mine {}
+
+
+/**********************************************************
+ *                   Core node types
+ **********************************************************/
+.node-article {}
+.node-blog    {}
+.node-page    {}
+.node-forum   {}
+.node-book    {}
+.node-poll    {}
+
+
+/**********************************************************
+ *                 Custom node types
+ **********************************************************/
+/** 
+ * Replace CONTENT_TYPE with the content type 
+ * machine-readable name. 
+ */
+.node-type-CONTENT_TYPE {}
+
+/*********************************************************
+*		Fecha y autor
+**********************************************************/
+
+.node-date-author {
+	float: left;
+	text-transform: uppercase;
+	color: #4c4c4c;
+}
+
+.node-date-author a:link,
+.node-date-author a:visited
+{
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+/*********************************************************
+*		Etiquetas
+**********************************************************/
+
+.node .field-name-field-tags,
+.node .field-name-field-etiquetas-campanya,
+.node .field-name-field-boletin-etiquetas,
+.node .field-name-field-comunicado-etiquetas
+{
+	display: inline;
+	float: left;
+	text-transform: uppercase;
+}
+
+.node .field-name-field-tags .field-item,
+.node .field-name-field-etiquetas-campanya .field-item,
+.node .field-name-field-boletin-etiquetas .field-item,
+.node .field-name-field-comunicado-etiquetas .field-item
+{
+	display: inline;
+	list-style-type: none;	
+}
+
+.node .field-name-field-tags .field-item a:link,
+.node .field-name-field-tags .field-item a:visited,
+.node .field-name-field-etiquetas-campanya .field-item a:link,
+.node .field-name-field-etiquetas-campanya .field-item a:visited,
+.node .field-name-field-boletin-etiquetas .field-item a:link,
+.node .field-name-field-boletin-etiquetas .field-item a:visited,
+.node .field-name-field-comunicado-etiquetas .field-item a:link,
+.node .field-name-field-comunicado-etiquetas .field-item a:visited
+{
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+/*****************************************
+*		Service links
+******************************************/
+
+.node .service-links .service-label {
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.node .service-links ul li {
+	display: inline;
+	list-style-type: none;
+	padding-right: 10px;
+}
+
+.node .service-links ul li a:link,
+.node .service-links ul li a:visited
+{
+	color: #429d34;
+}
+
+/*****************************************
+*		AddToAny
+******************************************/
+
+.da2a_button:link,
+.da2a_button:visited {
+	color: #429d34;
+	font-weight: bold;	
+}
+
+/*******************************************************************************
+*		Campo archivos adjuntos (boletines y comunicados)
+********************************************************************************/
+
+.field-name-field-comunicado-adjunto h3.field-label,
+.field-name-field-boletin-adjunto h3.field-label
+{
+	color: #4c4c4c;
+}
+
+.field-name-field-comunicado-adjunto .field-item a:link,
+.field-name-field-comunicado-adjunto .field-item a:visited,
+.field-name-field-boletin-adjunto .field-item a:link,
+.field-name-field-boletin-adjunto .field-item a:visited
+
+{
+	color: #429d34;
+}

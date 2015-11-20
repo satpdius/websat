@@ -1,0 +1,445 @@
+/* $Id: blocks.css,v 1.10 2011/01/14 03:12:40 jmburnz Exp $ */
+
+/**********************************************************
+ *                       Blocks
+ **********************************************************/
+/**
+ * Styles set for .block, .block-inner, block-title and 
+ * .block-content will be inherited by all blocks.
+ */
+.block {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+.block-inner    {} /* Block inner div */
+.block-title    {} /* h2 block title */
+.block .content {} /* Block content wrapper */
+
+
+/**********************************************************
+ *                  Sidebar blocks
+ **********************************************************/
+/**
+ * You can target blocks in one or more regions and 
+ * style them differently. 
+ */
+/* Low specifity selector to style blocks in both sidebars. */
+.sidebar .block {}
+.sidebar .block-title {}
+.sidebar .block-inner {}
+.sidebar .block .content {}
+
+/* Low specifity selector to style blocks in one sidebar. */
+.region-sidebar-first .block {}
+.region-sidebar-first .block-title {}
+.region-sidebar-first .block-inner {}
+.region-sidebar-first .block .content {}
+
+.region-sidebar-second .block {}
+.region-sidebar-second .block-title {}
+.region-sidebar-second .block-inner {}
+.region-sidebar-second .block .content {}
+
+/* Very high specifity selectors to style blocks in one sidebar. */
+#sidebar-first .block {}
+#sidebar-first .block-title {
+	font-size: 15px;
+	background: url('../images/fondo_titulo_bloque.png') no-repeat;
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: HelveticaNeue47LightCondensed, Verdana, Geneva, "DejaVu Sans", sans-serif;
+	padding-left: 7px;
+	border: 0px solid black;
+}
+#sidebar-first .block-inner {
+	color: #808080;
+}
+
+#sidebar-first .block-inner a:link {
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+#sidebar-first .block-inner a:visited {
+	color: #4c4c4c;
+	text-decoration: none;
+}
+
+#sidebar-first .block .content {
+	margin-top: 10px;
+	border: 0px solid black;
+}
+#sidebar-first .block .content .views-table {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#sidebar-first .block .content .views-table thead {
+	display: none;
+}
+
+#views_slideshow_cycle_main_vista_banner_campanyas-block {
+	margin-left: 12px;
+}
+
+#block-views-tweets-block {
+	font-size: 10px;
+}
+
+#sidebar-second .block {}
+#sidebar-second .block-title {}
+#sidebar-second .block-inner {}
+#sidebar-second .block .content {}
+
+
+/**********************************************************
+ *                  Region blocks
+ **********************************************************/
+/* Low specifity selector to style blocks in all regions. */
+.region .block {}
+.region .block-title {}
+.region .block-inner {}
+.region .block .content {}
+
+/* Low specifity selector to style blocks in one region. */
+.region-leaderboard .block {}
+.region-leaderboard .block-title {}
+.region-leaderboard .block-inner {}
+.region-leaderboardt .block .content {}
+
+.region-header .block {}
+.region-header .block-title {}
+.region-header .block-inner {}
+.region-header .block .content {}
+
+.region-help .block {}
+.region-help .block-title {}
+.region-help .block-inner {}
+.region-help .block .content {}
+
+.region-highlight .block {}
+.region-highlight .block-title {}
+.region-highlight .block-inner {}
+.region-highlight .block .content {}
+
+.region-content .block {}
+.region-content .block-title {}
+.region-content .block-inner {}
+.region-content .block .content {}
+
+.region-secondary-content .block {}
+.region-secondary-content .block-title {}
+.region-secondary-content .block-inner {}
+.region-secondary-content .block .content {}
+
+.region-tertiary-content .block {}
+.region-tertiary-content .block-title {}
+.region-tertiary-content .block-inner {}
+.region-tertiary_content .block .content {}
+
+.region-footer .block {}
+.region-footer .block-title {}
+.region-footer .block-inner {}
+.region-footer .block .content {}
+
+
+/**********************************************************
+ *                   Module blocks
+ **********************************************************/
+/**
+ * Module Block ID's 
+ * For contributed module blocks the pattern is the same,
+ * i.e. #block-[module]-[delta]
+ */
+
+#block-system-main                 {} /* The Main Content block  */
+#block-book-navigation             {} /* Book navigation block   */
+#block-node-recent                 {} /* Recent posts            */
+#block-blog-recent                 {} /* Recent Blog posts       */
+#block-comment-recent              {} /* Recent Comments block   */
+#block-forum-active                {} /* Active Forum topics     */
+#block-forum-new                   {} /* New Forum topics        */
+#block-locale-language             {} /* Language Switcher block */
+#block-node-syndicate              {} /* Syndicate block         */
+#block-poll-recent                 {} /* Most recent poll        */
+#block-profile-author-information  {} /* Author information      */
+#block-statistics-popular          {} /* Popular content         */
+#block-system-help                 {} /* Help block        */
+#block-system-management           {} /* Management block        */
+#block-system-powered-by           {} /* Powered by Drupal       */
+#block-user-login                  {} /* Login block             */
+#block-system-navigation           {} /* Navigation Menu block   */
+#block-user-new                    {} /* Who's New block         */
+#block-user-online                 {} /* Who's Online block      */
+
+/* Primary and Secondary links blocks */
+#block-menu-main-menu-links   {}
+#block-menu-secondary-links {}
+
+/* The class selector applies to all blocks of these types. */
+.block-system     {}
+.block-user       {}
+.block-node       {}
+.block-blog       {}
+.block-poll       {}
+.block-book       {}
+.block-comment    {}
+.block-locale     {}
+.block-aggregator {}
+.block-devel      {}
+
+
+/**********************************************************
+ *                 Search block form
+ **********************************************************/
+#block-search-form {
+	float: right;
+	margin-right: 10px;
+	display: inline;
+	clear: none;
+	margin-bottom: 0px;
+	height: 33px;
+}
+
+#block-search-form input.form-submit {
+	display: none;
+}
+
+#block-search-form input.form-text {
+	height: 10px;
+}
+
+#block-search-form .block-inner {
+	margin-top: 7px;
+}
+#block-search-form .block .content {}
+
+#search-block-form {}
+
+/* Wrapper divs. */
+#search-block-form > div {}
+#search-block-form .container-inline {}
+
+#search-block-form .form-item-search-block-form {}
+
+#search-block-form label {}
+#search-block-form input {}
+#search-block-form .form-item {}
+#search-block-form .form-submit {}
+#search-block-form #edit-search-block-form-2 {}
+
+/* Override forms.css focus style */
+#edit-search-block-form-2:hover,
+#edit-search-block-form-2:focus {}
+
+
+/**********************************************************
+ *                   Block item-list
+ **********************************************************/
+.block .item-list ul {
+  margin: 0;
+}
+.block .item-list ul li {}
+
+
+/**********************************************************
+ *                  Gpanel blocks
+ **********************************************************/
+/* Debug Gpanel blocks */
+.gpanel .block {}
+.gpanel .block-inner {}
+
+
+/**********************************************************
+*		    Block Menú Superior
+***********************************************************/
+
+#block-menu-menu-men-superior {
+	height: 33px;
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 0px;
+	clear: none;
+	
+}
+
+#block-menu-menu-men-superior .block-inner {
+	float: right;
+	margin-top: 7px;
+	font-family: HelveticaNeue47LightCondensed, Verdana, Geneva, "DejaVu Sans", sans-serif;
+	font-size: 14px;
+}
+
+/***********************************************************
+*		Block Menú principal (Nice menu)
+************************************************************/
+
+#block-nice_menus-1 {
+	width: 100%;
+	height: 100%;	
+}
+
+#block-nice_menus-1 .block-inner {
+	
+	font-family: HelveticaNeueLTStd77BdCn, Verdana, Geneva, "DejaVu Sans", sans-serif;
+	font-size: 17px;
+	height: 33px;
+}
+
+/***********************************************************
+*		Block Menú principal
+************************************************************/
+
+#block-system-main-menu {
+	width: 100%;
+	height: 100%;	
+}
+
+#block-system-main-menu .block-inner {
+	margin-top: 4px;
+	font-family: HelveticaNeueLTStd77BdCn, Verdana, Geneva, "DejaVu Sans", sans-serif;
+	font-size: 17px;
+	height: 33px;
+}
+
+/*****************************************
+*		Menú princ. pie
+******************************************/
+
+#block-menu-menu-men-principal-pie {
+	
+	width: 100px;
+	float: left;
+	margin-left: -300px;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	clear: none;
+	padding-top: 0px;
+	font-family: HelveticaNeue47LightCondensed, Verdana, Geneva, "DejaVu Sans", sans-serif;
+	line-height: 1;
+}
+
+#block-menu-menu-men-principal-pie .block-inner {
+	margin-top: 0px;
+}
+
+#block-menu-menu-men-principal-pie ul {
+	margin-left: 0px;
+}
+
+#block-menu-menu-men-principal-pie ul.menu li {
+	list-style: none;
+}
+
+#block-menu-menu-men-principal-pie a:link, #block-menu-menu-men-principal-pie a:visited {
+	text-decoration: none;
+	color: #838383;
+}
+
+/******************************************
+*		Menu usuario pie
+*******************************************/
+
+#block-menu-menu-men-usuario-pie {
+	width: 100px;
+        float: left;
+        margin-left: -185px;
+	margin-top: 50px;
+        clear: none;
+	padding-top: 0px;
+	font-family: HelveticaNeue47LightCondensed, Verdana, Geneva, "DejaVu Sans", sans-serif;
+        line-height: 1;
+
+}
+
+#block-menu-menu-men-usuario-pie ul {
+	margin-left: 0px;
+}
+
+#block-menu-menu-men-usuario-pie ul.menu li {
+        list-style: none;
+}
+
+#block-menu-menu-men-usuario-pie a:link, #block-menu-menu-men-usuario-pie a:visited {
+        text-decoration: none;
+        color: #838383;
+}
+
+/**********************************************************
+*		Bloque Nombre y lema pie de página
+***********************************************************/
+
+#block-block-3 {
+	float: left;
+	clear: none;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	width: 300px;
+	height: 30px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+#letras_sat_pie_pagina {
+	font-family: HelveticaNeue47LightCondensed, Verdana, Geneva, "DejaVu Sans", sans-serif;
+        line-height: 1; 
+	font-size: 15px;
+	color: #429d34;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#lema_pie_pagina {
+	font-family: HelveticaNeue47LightCondensed, Verdana, Geneva, "DejaVu Sans", sans-serif;
+        line-height: 1;
+        font-size: 11px;
+        color: #838383;
+        text-transform: uppercase;
+
+}
+
+#block-block-4 {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#block-block-4 .block-inner .content {
+	font-family: HelveticaNeue47LightCondensed, Verdana, Geneva, "DejaVu Sans", sans-serif;
+        line-height: 1;
+        font-size: 11px;
+        color: #838383;
+        text-transform: uppercase;
+	float: right;
+	width: 553px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	height: 11px;
+}
+
+#block-block-4 .block-inner .content p {
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+#block-block-4 a:link,
+#block-block-4 a:visited {
+	color: #429d34;
+	text-decoration: none;
+}
+
+/************************************************************
+*			Banner principal
+*************************************************************/
+
+#block-views-vista_banner_principal-block .view-footer {
+	float: right;
+}
+
+#block-views-vista_banner_principal-block .view-footer a:link,
+#block-views-vista_banner_principal-block .view-footer a:visited,
+#block-views-vista_banner_principal-block .view-footer a:hover
+{
+	text-decoration: none;
+	color: #439e35;
+	font-weight: bold;
+}

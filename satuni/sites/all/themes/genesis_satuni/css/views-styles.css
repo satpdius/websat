@@ -1,0 +1,403 @@
+/* $Id: views-styles.css,v 1.3 2010/06/24 23:08:18 jmburnz Exp $ */
+
+/**********************************************************
+ *                    Views Styles
+ **********************************************************/
+
+/* TODO: add basic views selectors */
+
+/*#block-views-vista_noticias_principal-block .views-row .views-field-title,
+#block-views-vista_noticias_principal-block .views-row .views-field-changed,
+{
+	float: left;
+}*/
+
+#block-views-vista_noticias_principal-block .views-row .views-field-title,
+#block-views-vista_noticias_principal-block .views-row .views-field-view-node,
+/*#block-views-vista_noticias_principal-block .views-row .views-field-changed,*/
+#block-views-vista_noticias_principal-block .views-row .views-field-body {
+	width: 410px;
+	float: right;
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-view-node {
+	margin-top: 0px;
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-body,
+#block-views-vista_noticias_principal-block .views-row .views-field-body p {
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;	
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-field-image,
+#block-views-vista_noticias_principal-block .views-row .views-field-field-boletin-imagen,
+#block-views-vista_noticias_principal-block .views-row .views-field-field-comunicado-imagen,
+#block-views-vista_noticias_principal-block .views-row .views-field-field-imagen-campanya
+{
+	float: left;
+	width: 160px;
+}
+
+#block-views-vista_noticias_principal-block .views-row { 
+	
+	border-bottom: 1px dashed #429d34;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+#block-views-vista_noticias_principal-block .views-row-last { 
+	border: none;
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-title {
+	font-size: 17px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-title a:link {
+	color: #429d34;
+	text-decoration: none;
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-title a:visited {
+	color: #429d34;
+	text-decoration: none;
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-changed,
+#block-views-vista_noticias_principal-block .views-row .views-field-name,
+#block-views-vista_noticias_principal-block .views-row .views-field-name a:link,
+#block-views-vista_noticias_principal-block .views-row .views-field-name a:visited,
+#block-views-vista_noticias_principal-block .views-row .views-field-field-tags a:link,
+#block-views-vista_noticias_principal-block .views-row .views-field-field-tags a:visited,
+#block-views-vista_noticias_principal-block .views-row .views-field-comments-link a:link,
+#block-views-vista_noticias_principal-block .views-row .views-field-comments-link a:visited {
+	color: #4c4c4c;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#block-views-vista_noticias_principal-block .views-row .views-field-view-node a:link,
+#block-views-vista_noticias_principal-block .views-row .views-field-view-node a:visited {
+	color: #429d34;
+}
+
+/*************************************************
+*		Vista nodo completo
+**************************************************/
+
+.view-vista-nodo .views-field-title {
+	font-size: 20px;
+	color: #429d34;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.view-vista-nodo .views-field-created,
+.view-vista-nodo .views-field-name,
+.view-vista-nodo .views-field-term-node-tid,
+.view-vista-nodo .views-field-comments-link {
+	text-transform: uppercase;
+	color: #4c4c4c;
+}
+
+.view-vista-nodo .views-field-name a:link,
+.view-vista-nodo .views-field-term-node-tid a:link,
+.view-vista-nodo .views-field-comments-link a:link,
+.view-vista-nodo .views-field-name a:visited,
+.view-vista-nodo .views-field-term-node-tid a:visited,
+.view-vista-nodo .views-field-comments-link a:visited {
+	text-decoration: none;
+	color: #4c4c4c;
+}
+
+.view-vista-nodo .views-field-body {
+	font-weight: bold;
+}
+
+.view-vista-nodo .views-field-service-links {
+	color: #4c4c4c;
+}
+
+.view-vista-nodo .views-field-service-links .views-label-service-links {
+	font-weight: bold;
+}
+
+.view-vista-nodo .views-field-service-links ul li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.view-vista-nodo .views-field-service-links ul li a:link,
+.view-vista-nodo .views-field-service-links ul li a:visited
+{
+	color: #429d34;
+}
+
+/****************************************************
+*		Vista página resumen campañas
+*****************************************************/
+
+.view-vista-pagina-campanyas .views-row .views-field-title,
+.view-vista-pagina-campanyas .views-row .views-field-view-node,
+/*.view-vista-pagina-campanyas .views-row .views-field-changed,*/
+.view-vista-pagina-campanyas .views-row .views-field-body {
+	width: 410px;
+	float: right;
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-view-node {
+	margin-top: 0px;
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-body,
+.view-vista-pagina-campanyas .views-row .views-field-body p {
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;	
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-field-imagen-campanya {
+	float: left;
+	width: 160px;
+}
+
+.view-vista-pagina-campanyas .views-row { 
+	
+	border-bottom: 1px dashed #429d34;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+.view-vista-pagina-campanyas .views-row-last { 
+	border: none;
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-title {
+	font-size: 17px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-title a:link {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-title a:visited {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-changed,
+.view-vista-pagina-campanyas .views-row .views-field-name,
+.view-vista-pagina-campanyas .views-row .views-field-name a:link,
+.view-vista-pagina-campanyas .views-row .views-field-name a:visited,
+.view-vista-pagina-campanyas .views-row .views-field-field-etiquetas-campanya a:link,
+.view-vista-pagina-campanyas .views-row .views-field-field-etiquetas-campanya a:visited,
+.view-vista-pagina-campanyas .views-row .views-field-comments-link a:link,
+.view-vista-pagina-campanyas .views-row .views-field-comments-link a:visited {
+	color: #4c4c4c;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.view-vista-pagina-campanyas .views-row .views-field-view-node a:link,
+.view-vista-pagina-campanyas .views-row .views-field-view-node a:visited {
+	color: #429d34;
+}
+
+/****************************************************
+*		Vista página resumen boletines
+*****************************************************/
+
+.view-vista-pagina-boletines .views-row .views-field-view-node {
+	margin-top: 0px;
+}
+
+.view-vista-pagina-boletines .views-row .views-field-body,
+.view-vista-pagina-boletines .views-row .views-field-body p {
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;	
+}
+
+.view-vista-pagina-boletines .views-row { 
+	
+	border-bottom: 1px dashed #429d34;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+.view-vista-pagina-boletines .views-row-last { 
+	border: none;
+}
+
+.view-vista-pagina-boletines .views-row .views-field-title {
+	font-size: 17px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.view-vista-pagina-boletines .views-row .views-field-title a:link {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-vista-pagina-boletines .views-row .views-field-title a:visited {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-vista-pagina-boletines .views-row .views-field-changed,
+.view-vista-pagina-boletines .views-row .views-field-name,
+.view-vista-pagina-boletines .views-row .views-field-name a:link,
+.view-vista-pagina-boletines .views-row .views-field-name a:visited,
+.view-vista-pagina-boletines .views-row .views-field-field-boletin-etiquetas a:link,
+.view-vista-pagina-boletines .views-row .views-field-field-boletin-etiquetas a:visited,
+.view-vista-pagina-boletines .views-row .views-field-comments-link a:link,
+.view-vista-pagina-boletines .views-row .views-field-comments-link a:visited {
+	color: #4c4c4c;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.view-vista-pagina-boletines .views-row .views-field-view-node a:link,
+.view-vista-pagina-boletines .views-row .views-field-view-node a:visited {
+	color: #429d34;
+}
+
+/****************************************************
+*		Vista página resumen comunicados
+*****************************************************/
+
+.view-vista-pagina-comunicados .views-row .views-field-view-node {
+	margin-top: 0px;
+}
+
+.view-vista-pagina-comunicados .views-row .views-field-body,
+.view-vista-pagina-comunicados .views-row .views-field-body p {
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;	
+}
+
+.view-vista-pagina-comunicados .views-row { 
+	
+	border-bottom: 1px dashed #429d34;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+.view-vista-pagina-comunicados .views-row-last { 
+	border: none;
+}
+
+.view-vista-pagina-comunicados .views-row .views-field-title {
+	font-size: 17px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.view-vista-pagina-comunicados .views-row .views-field-title a:link {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-vista-pagina-comunicados .views-row .views-field-title a:visited {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-vista-pagina-comunicados .views-row .views-field-changed,
+.view-vista-pagina-comunicados .views-row .views-field-name,
+.view-vista-pagina-comunicados .views-row .views-field-name a:link,
+.view-vista-pagina-comunicados .views-row .views-field-name a:visited,
+.view-vista-pagina-comunicados .views-row .views-field-field-comunicado-etiquetas a:link,
+.view-vista-pagina-comunicados .views-row .views-field-field-comunicado-etiquetas a:visited,
+.view-vista-pagina-comunicados .views-row .views-field-comments-link a:link,
+.view-vista-pagina-comunicados .views-row .views-field-comments-link a:visited {
+	color: #4c4c4c;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.view-vista-pagina-comunicados .views-row .views-field-view-node a:link,
+.view-vista-pagina-comunicados .views-row .views-field-view-node a:visited {
+	color: #429d34;
+}
+
+/****************************************************
+*		Vista página término taxonomía
+*****************************************************/
+
+.view-taxonomy-term .views-row .views-field-view-node {
+	margin-top: 0px;
+}
+
+.view-taxonomy-term .views-row .views-field-body,
+.view-taxonomy-term .views-row .views-field-body p {
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 0px;	
+}
+
+.view-taxonomy-term .views-row { 
+	
+	border-bottom: 1px dashed #429d34;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+}
+
+.view-taxonomy-term .views-row-last { 
+	border: none;
+}
+
+.view-taxonomy-term .views-row .views-field-title {
+	font-size: 17px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.view-taxonomy-term .views-row .views-field-title a:link {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-taxonomy-term .views-row .views-field-title a:visited {
+	color: #429d34;
+	text-decoration: none;
+}
+
+.view-taxonomy-term .views-row .views-field-changed,
+.view-taxonomy-term .views-row .views-field-name,
+.view-taxonomy-term .views-row .views-field-name a:link,
+.view-taxonomy-term .views-row .views-field-name a:visited,
+.view-taxonomy-term .views-row .views-field-field-comunicado-etiquetas a:link,
+.view-taxonomy-term .views-row .views-field-field-comunicado-etiquetas a:visited,
+.view-taxonomy-term .views-row .views-field-field-tags a:link,
+.view-taxonomy-term .views-row .views-field-field-tags a:visited,
+.view-taxonomy-term .views-row .views-field-field-etiquetas-campanya a:link,
+.view-taxonomy-term .views-row .views-field-field-etiquetas-campanya a:visited,
+.view-taxonomy-term .views-row .views-field-field-boletin-etiquetas a:link,
+.view-taxonomy-term .views-row .views-field-field-boletin-etiquetas a:visited,
+.view-taxonomy-term .views-row .views-field-comments-link a:link,
+.view-taxonomy-term .views-row .views-field-comments-link a:visited {
+	color: #4c4c4c;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.view-taxonomy-term .views-row .views-field-view-node a:link,
+.view-taxonomy-term .views-row .views-field-view-node a:visited {
+	color: #429d34;
+}
